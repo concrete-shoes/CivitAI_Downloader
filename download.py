@@ -12,9 +12,9 @@ parser.add_argument("-o", "--output", type=str, default=".", help="Output direct
 args = parser.parse_args()
 
 # Determine the token
-token = os.getenv("civitai_token", args.token)
+token = os.getenv("CIVITAI_TOKEN", args.token)
 if not token:
-    print("Error: no token provided. Set the 'civitai_token' environment variable or use --token.")
+    print("Error: no token provided. Set the 'CIVITAI_TOKEN' environment variable or use --token.")
     sys.exit(1)
 
 # Create output directory if it doesn't exist
