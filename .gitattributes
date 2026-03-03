@@ -1,9 +1,2 @@
-# Force all shell scripts to use LF endings
-*.sh text eol=lf
-
-# Optional: also Python files
-*.py text eol=lf
-
-# Optional: other text files you want consistent endings
-*.toml text eol=lf
-*.txt text eol=lf
+# Force all text files to use LF endings
+* text eol=lf
